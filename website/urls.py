@@ -6,6 +6,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name='index.html')),
     path('product/', include('product.urls', namespace='product')),
-    path('customer/', include('customer.urls', namespace='customer')),
-    path('employee/', include('employee.urls', namespace='employee')),
+    path('customers/', include('customer.urls', namespace='customer')),
+    path('employees/', include('employee.urls', namespace='employee')),
 ]
