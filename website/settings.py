@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'customer',
     'employee',
     'product',
+    'analytics'
 ]
 
 REST_FRAMEWORK = {

@@ -11,7 +11,7 @@ class Employee(models.Model):
     
 
 class EmployeeShifts(models.Model):
-    employee = models.ForeignKey(Employee, on_delete=models.CASCADE)
+    employee = models.ForeignKey(Employee, on_delete=models.CASCADE, related_name='shifts')
     shift_date_time = models.DateTimeField()
     shift_duration = models.DurationField()
 
